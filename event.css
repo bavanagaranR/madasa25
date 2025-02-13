@@ -344,7 +344,7 @@ z-index: 3;
 }
 .feature-text{
     color: var(--clr-grey-2);
-    max-width: 17rem;
+    max-width: 70%;
     margin: 0 auto;
     text-align: left;
     font-size: 1.2rem;
@@ -375,4 +375,20 @@ z-index: 3;
 
    
 }
+@media screen and (min-width: 600px) {
+    
+         
+        .feature-text{
+            color: var(--clr-grey-2);
+            max-width: 80%;
+            margin: 0 25%;
+            text-align: left;
+            font-size: 1.2rem;
+        
+        
+    
+
+   
+}
+
 
