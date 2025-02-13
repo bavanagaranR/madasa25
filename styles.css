@@ -194,7 +194,8 @@ home .home-slider .swiper-slide {
 .home .home-slider .swiper-slide img {
   height: 100%;
   width: 100%;
-  object-fit: cover; /* Cover the container proportionally */
+  object-fit: contain; /* Cover the container proportionally */
+  object-position: center;
   display: block; /* Remove space below the image */
 }
 
