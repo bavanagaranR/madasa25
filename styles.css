@@ -221,11 +221,20 @@ section {
 }
 
 
+@media  screen  and (max-width: 500) {
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
 .footer {
   background: #111;
+
 }
 
+  
+}
 .footer .box-container {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
@@ -236,6 +245,14 @@ section {
   padding: 1rem 0;
   color: #fff;
 }
+.footer .box-container .box h4 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: transparent;
+  background-image: var(--theme-color) !important;
+  background-clip: text !important;
+}
+
 
 .footer .box-container .box a {
   display: block;
@@ -246,7 +263,9 @@ section {
 
 .footer .box-container .box a i {
   padding-right: 0.5rem;
-  color: var(--theme-color);
+  color: transparent;
+  background-image: var(--theme-color) !important;
+  background-clip: text !important;
 }
 
 .footer .box-container .box a:hover i {
@@ -265,7 +284,9 @@ section {
 }
 
 .footer .credit span {
-  color: var(--theme-color);
+  color: transparent;
+  background-image: var(--theme-color) !important;
+  background-clip: text !important;
 }
 
 html::-webkit-scrollbar {
@@ -322,7 +343,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   /* left: -5.9rem; */
   padding: 1.3rem 1.5rem;
-  background: #333;
+  /* background: #333; */
   cursor: pointer;
 }
 
