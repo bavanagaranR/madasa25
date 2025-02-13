@@ -46,6 +46,8 @@ section {
   padding: 2rem 9%;
 }
 
+
+
 .header {
   position: fixed;
   top: 0;
@@ -86,6 +88,8 @@ section {
   }
 
 }
+
+
 
 .header .logo span {
   color: transparent;
@@ -131,7 +135,7 @@ section {
 }
 
 .home .content h3 span {
-  font-family: var(--ff-design);
+  font-family: var(--ff-brand);
   animation: flame 1s infinite;
   letter-spacing: 1px;
   

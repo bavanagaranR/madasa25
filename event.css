@@ -264,9 +264,24 @@ z-index: 10000;
 }
 
 /* banner */
-.header{
+.paper{
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("./images/event2.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+.quiz{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("./images/event1.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+.connect{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("./images/event4.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+.ipl{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url("./images/event3.jpg") center/cover no-repeat fixed;
     position: relative;
 }
 .banner{
