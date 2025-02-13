@@ -20,7 +20,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: 0.2s linear;
+  transition: 0.3s linear;
 }
 
 html {
@@ -100,6 +100,7 @@ section {
 
 .home .content h3 span {
  color: transparent;
+ transition: var(--transition);
   background-image: var(--theme-color) !important;
   background-clip: text !important;
   text-transform: uppercase;
@@ -116,12 +117,21 @@ section {
   color: #fff;
   cursor: pointer;
   font-weight: 600;
+  border: none;
+  transition: var(--transition);
 }
 
 .btn:hover {
+  
   background: var(--theme-color);
   transition: var(--transition);
 }
+.box:hover{
+  background-color: var(--clr-white);
+  box-shadow: 3px 3px var(--clr-primary);
+
+}
+
 
 .home .home-slider .swiper-slide {
   overflow: hidden;
@@ -173,7 +183,10 @@ section {
   background: var(--theme-color);
   color: #fff;
 }
-
+.box-container .box:hover i{
+  background:lightgreen;
+  transform: translateY(-5px);
+}
 .service .box-container .box h3 {
   font-size: 2rem;
   color: #fff;
@@ -256,6 +269,7 @@ section {
   color: transparent;
   background-image: var(--theme-color) !important;
   background-clip: text !important;
+  transition: var(--transition);
 }
 
 
@@ -267,6 +281,7 @@ section {
 }
 
 .footer .box-container .box a i {
+  transition: var(--transition);
   padding-right: 0.5rem;
   color: transparent;
   background-image: var(--theme-color) !important;
@@ -274,6 +289,7 @@ section {
 }
 
 .footer .box-container .box a:hover i {
+  transition: var(--transition);
   padding-right: 1.5rem;
   color: #fff;
 }
@@ -289,6 +305,7 @@ section {
 }
 
 .footer .credit span {
+  transition: var(--transition);
   color: transparent;
   background-image: var(--theme-color) !important;
   background-clip: text !important;
@@ -303,6 +320,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
+  transition: var(--transition);
   background: var(--theme-color);
   border-radius: 5rem;
 }
