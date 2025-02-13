@@ -2,17 +2,24 @@
 
 /* Google Fonts(Poppins) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
 
 :root {
   --clr-primary: #f53b57; /* Red color */
   --clr-secondary: #e9b949; /* Yellow color */
   --theme-color: linear-gradient(180deg, var(--clr-primary), var(--clr-secondary)); /* Gradient from primary to secondary */
   --transition:all 0.3s linear;
+  --ff-primary:"Roboto", sans-serif;
+    --ff-secondary:"Inter",sans-serif;
+    --ff-design:"satisfy", cursive;
+    --ff-brand:"Margarine",sans-serif;
 }
 
 
 * {
-  font-family: "Poppins", sans-serif;
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,6 +38,7 @@ html {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background: #222;
 }
 
@@ -57,6 +65,26 @@ section {
   font-weight: bolder;
   color: #fff;
   font-size: 4rem;
+  
+  font-family: var(--ff-brand);
+  text-shadow: 5px 5px 5px var(--clr-primary);
+  animation: flame 1s infinite;
+  letter-spacing: 1px;
+}
+@keyframes flame{
+  0%,100%{
+      text-shadow: 0 -5px 10px rgba(225,69, 0,0.6),0 -5px 20px rgba(225,69, 0,0.4), 0 -5px 30px rgba(225,69, 0,0.2), 0 -5px 40px rgba(225,69, 0,0.1);
+  }
+  25%{
+      text-shadow: 0 -5px 15px rgba(225,69, 0,0.8),0 -5px 30px rgba(225,69, 0,0.6), 0 -5px 45px rgba(225,69, 0,0.4), 0 -5px 60px rgba(225,69, 0,0.2);
+  }
+  50%{
+      text-shadow: 0 -5px 20px rgba(225,69, 0,0.8),0 -5px 40px rgba(225,69, 0,0.6), 0 -5px 60px rgba(225,69, 0,0.4), 0 -5px 80px rgba(225,69, 0,0.2);
+  }
+  75%{
+      text-shadow: 0 -5px 15px rgba(225,69, 0,0.8),0 -5px 30px rgba(225,69, 0,0.6), 0 -5px 45px rgba(225,69, 0,0.4), 0 -5px 60px rgba(225,69, 0,0.2);
+  }
+
 }
 
 .header .logo span {
@@ -98,9 +126,15 @@ section {
   color: #fff;
   font-size: 4.5rem;
   text-transform: uppercase;
+  animation: flame 1s infinite;
+  letter-spacing: 1px;
 }
 
 .home .content h3 span {
+  font-family: var(--ff-design);
+  animation: flame 1s infinite;
+  letter-spacing: 1px;
+  
  color: transparent;
  transition: var(--transition);
   background-image: var(--theme-color) !important;
