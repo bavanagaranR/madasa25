@@ -46,9 +46,11 @@ section {
   z-index: 10000;
   background: #333;
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 9%;
+  max-width: 100%;
 }
 
 .header .logo {
@@ -139,6 +141,40 @@ section {
   height: 50rem;
   width: 35rem;
 }
+.home .home-slider {
+  width: 100%; /* Full width of parent container */
+  overflow: hidden; /* Prevent overflow */
+}
+home .home-slider .swiper-slide {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  width: 100%; /* Use 100% of container width */
+  height: 60vh; /* Adjust height relative to viewport height */
+  position: relative; /* For proper image alignment */
+}
+
+.home .home-slider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Cover the container proportionally */
+  display: block; /* Remove space below the image */
+}
+
+@media (min-width: 768px) {
+  .home .home-slider .swiper-slide {
+    width: 48%; /* Adjust width on larger screens */
+    height: 50vh; /* Adjust height for larger screens */
+  }
+}
+
+/* Optional: For even larger screens */
+@media (min-width: 1024px) {
+  .home .home-slider .swiper-slide {
+    width: 32%; /* Adjust width for desktop */
+    height: 40vh; /* Adjust height for desktop */
+  }
+}
+
 
 .home .home-slider .swiper-slide img {
   height: 100%;
