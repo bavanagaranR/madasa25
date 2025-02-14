@@ -293,7 +293,7 @@ home .home-slider .swiper-slide {
   background-color: #fff;
   border-radius: 24px;
   padding: 25px;
-  box-shadow: 0 4px 10px rgba(0, 255, 0, 2.5);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 5.5);
 position: relative;
   margin-top: 3rem;
   cursor: pointer;
@@ -302,7 +302,7 @@ position: relative;
 .profile-card:hover {
   /* background:lightgreen; */
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(255, 215, 0, 5.5);
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 2.5);
 
 
 }
