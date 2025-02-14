@@ -368,7 +368,7 @@ z-index: 10000;
 }
 .feature:hover{
     background-color: var(--clr-white);
-    box-shadow: 0 2px var(--clr-primary);
+    box-shadow: 0 3px var(--clr-primary);
 }
 
 .feature:hover .feature-title{
