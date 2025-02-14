@@ -65,7 +65,7 @@ var swiper = new Swiper(".review-slider", {
     },
   },
   autoplay: {
-    delay: 5000,
+    delay: 1500,
     disableOnInteraction: false,
   },
 });
