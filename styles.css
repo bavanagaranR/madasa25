@@ -105,6 +105,22 @@ section {
 
 
 
+.header  img{
+  
+  max-width: fit-content;
+  max-height: fit-content;
+  width:25rem;
+position: relative;
+  
+
+  
+}
+.header .navbar{
+  position: static;
+  position: absolute;
+  right: 0;
+}
+
 
 .header .logo span {
   color: transparent;
@@ -143,7 +159,7 @@ section {
 
 .home .content h3 {
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   animation: flame 1s infinite;
   letter-spacing: 1px;
