@@ -7,19 +7,22 @@
 
 
 :root {
-  --clr-primary: #f53b57; /* Red color */
-  --clr-secondary: #e9b949; /* Yellow color */
-  --theme-color: linear-gradient(180deg, var(--clr-primary), var(--clr-secondary)); /* Gradient from primary to secondary */
-  --transition:all 0.3s linear;
-  --ff-primary:"Roboto", sans-serif;
-    --ff-secondary:"Inter",sans-serif;
-    --ff-design:"satisfy", cursive;
-    --ff-brand:"Margarine",sans-serif;
+  --clr-primary: #f53b57;
+  /* Red color */
+  --clr-secondary: #e9b949;
+  /* Yellow color */
+  --theme-color: linear-gradient(180deg, var(--clr-primary), var(--clr-secondary));
+  /* Gradient from primary to secondary */
+  --transition: all 0.3s linear;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Inter", sans-serif;
+  --ff-design: "satisfy", cursive;
+  --ff-brand: "Margarine", sans-serif;
 }
 
 
 * {
-  
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,27 +71,38 @@ section {
   font-weight: bolder;
   color: #fff;
   font-size: 4rem;
-  
+
   font-family: var(--ff-brand);
   text-shadow: 5px 5px 5px var(--clr-primary);
   animation: flame 1s infinite;
   letter-spacing: 1px;
 }
-@keyframes flame{
-  0%,100%{
-      text-shadow: 0 -5px 10px rgba(225,69, 0,0.6),0 -5px 20px rgba(225,69, 0,0.4), 0 -5px 30px rgba(225,69, 0,0.2), 0 -5px 40px rgba(225,69, 0,0.1);
+/* .glow1{
+  animation: glowingShadow 2s infinite;
+} */
+
+@keyframes flame {
+
+  0%,
+  100% {
+    text-shadow: 0 -5px 10px rgba(225, 69, 0, 0.6), 0 -5px 20px rgba(225, 69, 0, 0.4), 0 -5px 30px rgba(225, 69, 0, 0.2), 0 -5px 40px rgba(225, 69, 0, 0.1);
   }
-  25%{
-      text-shadow: 0 -5px 15px rgba(225,69, 0,0.8),0 -5px 30px rgba(225,69, 0,0.6), 0 -5px 45px rgba(225,69, 0,0.4), 0 -5px 60px rgba(225,69, 0,0.2);
+
+  25% {
+    text-shadow: 0 -5px 15px rgba(225, 69, 0, 0.8), 0 -5px 30px rgba(225, 69, 0, 0.6), 0 -5px 45px rgba(225, 69, 0, 0.4), 0 -5px 60px rgba(225, 69, 0, 0.2);
   }
-  50%{
-      text-shadow: 0 -5px 20px rgba(225,69, 0,0.8),0 -5px 40px rgba(225,69, 0,0.6), 0 -5px 60px rgba(225,69, 0,0.4), 0 -5px 80px rgba(225,69, 0,0.2);
+
+  50% {
+    text-shadow: 0 -5px 20px rgba(225, 69, 0, 0.8), 0 -5px 40px rgba(225, 69, 0, 0.6), 0 -5px 60px rgba(225, 69, 0, 0.4), 0 -5px 80px rgba(225, 69, 0, 0.2);
   }
-  75%{
-      text-shadow: 0 -5px 15px rgba(225,69, 0,0.8),0 -5px 30px rgba(225,69, 0,0.6), 0 -5px 45px rgba(225,69, 0,0.4), 0 -5px 60px rgba(225,69, 0,0.2);
+
+  75% {
+    text-shadow: 0 -5px 15px rgba(225, 69, 0, 0.8), 0 -5px 30px rgba(225, 69, 0, 0.6), 0 -5px 45px rgba(225, 69, 0, 0.4), 0 -5px 60px rgba(225, 69, 0, 0.2);
   }
 
 }
+
+
 
 
 
@@ -96,7 +110,7 @@ section {
   color: transparent;
   background-image: var(--theme-color) !important;
   background-clip: text !important;
-  
+
 }
 
 .header .navbar a {
@@ -139,9 +153,9 @@ section {
   font-family: var(--ff-brand);
   animation: flame 1s infinite;
   letter-spacing: 1px;
-  
- color: transparent;
- transition: var(--transition);
+
+  color: transparent;
+  transition: var(--transition);
   background-image: var(--theme-color) !important;
   background-clip: text !important;
   text-transform: uppercase;
@@ -163,11 +177,12 @@ section {
 }
 
 .btn:hover {
-  
+
   background: var(--theme-color);
   transition: var(--transition);
 }
-.box:hover{
+
+.box:hover {
   background-color: var(--clr-white);
   box-shadow: 3px 3px var(--clr-primary);
 
@@ -180,38 +195,51 @@ section {
   height: 50rem;
   width: 35rem;
 }
+
 .home .home-slider {
-  width: 100%; /* Full width of parent container */
-  overflow: hidden; /* Prevent overflow */
+  width: 100%;
+  /* Full width of parent container */
+  overflow: hidden;
+  /* Prevent overflow */
 }
+
 home .home-slider .swiper-slide {
   overflow: hidden;
   border-radius: 0.5rem;
-  width: 100%; /* Use 100% of container width */
-  height: 60vh; /* Adjust height relative to viewport height */
-  position: relative; /* For proper image alignment */
+  width: 100%;
+  /* Use 100% of container width */
+  height: 60vh;
+  /* Adjust height relative to viewport height */
+  position: relative;
+  /* For proper image alignment */
 }
 
 .home .home-slider .swiper-slide img {
   height: 100%;
   width: 100%;
-  object-fit: contain; /* Cover the container proportionally */
+  object-fit: contain;
+  /* Cover the container proportionally */
   object-position: center;
-  display: block; /* Remove space below the image */
+  display: block;
+  /* Remove space below the image */
 }
 
 @media (min-width: 768px) {
   .home .home-slider .swiper-slide {
-    width: 48%; /* Adjust width on larger screens */
-    height: 50vh; /* Adjust height for larger screens */
+    width: 48%;
+    /* Adjust width on larger screens */
+    height: 50vh;
+    /* Adjust height for larger screens */
   }
 }
 
 /* Optional: For even larger screens */
 @media (min-width: 1024px) {
   .home .home-slider .swiper-slide {
-    width: 32%; /* Adjust width for desktop */
-    height: 40vh; /* Adjust height for desktop */
+    width: 32%;
+    /* Adjust width for desktop */
+    height: 40vh;
+    /* Adjust height for desktop */
   }
 }
 
@@ -259,10 +287,12 @@ home .home-slider .swiper-slide {
   background: var(--theme-color);
   color: #fff;
 }
-.box-container .box:hover i{
-  background:lightgreen;
+
+.box-container .box:hover i {
+  background: lightgreen;
   transform: translateY(-5px);
 }
+
 .service .box-container .box h3 {
   font-size: 2rem;
   color: #fff;
@@ -276,15 +306,16 @@ home .home-slider .swiper-slide {
 }
 
 /* team */
-.team{
+.team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 1.5rem;
   margin: 3rem 10%;
   justify-content: center;
-  
+
 }
-.profile-card{
+
+.profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,11 +325,12 @@ home .home-slider .swiper-slide {
   border-radius: 24px;
   padding: 25px;
   box-shadow: 0 4px 10px rgba(255, 215, 0, 5.5);
-position: relative;
+  position: relative;
   margin-top: 3rem;
   cursor: pointer;
-  
+
 }
+
 .profile-card:hover {
   /* background:lightgreen; */
   transform: translateY(-5px);
@@ -306,21 +338,23 @@ position: relative;
 
 
 }
+
 /* .profile-card:hover .link{
   display: block;
 } */
 .media-buttons .link:hover {
-  background:var(--clr-primary);
-  
+  background: var(--clr-primary);
+
   transform: translateY(-5px);
 }
-.media-buttons .link:hover i{
+
+.media-buttons .link:hover i {
   color: white;
-  
-  
+
+
 }
 
-.profile-card::before{
+.profile-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -328,12 +362,12 @@ position: relative;
   height: 36%;
   width: 100%;
   border-radius: 24px 24px 0 0;
- background:  linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
 
 
 }
 
-.image{
+.image {
   position: relative;
   height: 150px;
   width: 150px;
@@ -342,36 +376,41 @@ position: relative;
   padding: 3px;
   margin-bottom: 10px;
 }
+
 .image .profile-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border:3px solid #fff;
+  border: 3px solid #fff;
 
 }
-.profile-card .text-data{
+
+.profile-card .text-data {
   display: block;
   flex-direction: column;
   align-items: center;
   color: #333;
 }
 
-.text-data .name{
+.text-data .name {
   font-size: 22px;
   font-weight: 500;
   display: block;
 }
-.text-data .job{
+
+.text-data .job {
   font-size: 15px;
   font-weight: 400;
 }
-.profile-card .media-buttons{
+
+.profile-card .media-buttons {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
-.media-buttons .link{
+
+.media-buttons .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,7 +420,7 @@ position: relative;
   width: 34px;
   border-radius: 50%;
   margin: 0 8px;
-  background: rgba(0,0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   /* display: none; */
 
 
@@ -390,9 +429,11 @@ position: relative;
 
   text-decoration: none;
 }
-.media-buttons .link i{
-  color:black;
+
+.media-buttons .link i {
+  color: black;
 }
+
 /* about */
 
 .about .row {
@@ -431,23 +472,26 @@ position: relative;
 }
 
 
-@media  screen  and (max-width: 500) {
-  .footer{
+@media screen and (max-width: 500) {
+  .footer {
     display: flex;
     justify-content: center;
   }
-.footer {
-  background: #333;
+
+  .footer {
+    background: #333;
+
+  }
+
 
 }
 
-  
-}
 .footer {
   background: #333;
   text-align: center;
 
 }
+
 .footer .box-container {
   margin-top: 2rem;
   display: grid;
@@ -460,6 +504,7 @@ position: relative;
   padding: 1rem 0;
   color: wheat;
 }
+
 .footer .box-container .box h4 {
   font-size: 1.5rem;
   padding: 1rem 0;
