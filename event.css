@@ -239,6 +239,22 @@ z-index: 10000;
 
 }
 
+.clk{
+    color:white ;
+    background-color: rgba(0, 0, 0, 0.6);
+     border-radius: 1rem;
+      padding: 0.1rem 0.5rem;
+      margin-left: 0.5rem; 
+
+}
+.clk:hover {
+    background-color:var(--clr-primary);
+    color: white;
+    border: black 1px solid;
+    box-shadow: #333;
+   padding: 0.2rem 0.6rem;
+   transition: var(--transition);
+  }
 
 @media screen  and (min-width: 500px){
     .navbar{
