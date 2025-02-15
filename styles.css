@@ -48,7 +48,14 @@ body {
 section {
   padding: 2rem 9%;
 }
-
+.feb{
+  display: block;
+}
+@media screen and (max-width: 500px){
+  .feb{
+    display:inline;
+  }
+}
 
 
 .header {
